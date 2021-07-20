@@ -1,0 +1,343 @@
+// 设置预设颜色方便之后使用
+$bg-dark-gray: #31394d;
+$white: #ece7df;
+$blue-black:#262d3c;
+$imgSize: 70px;
+$red:#fc4053;
+$blue: rgb(23,137,206);
+$blue2:#45d9fd;
+$text-white:rgb(250,250,250);
+$green: rgb(37,228,122);
+$yellow:#ffd124;
+$yellow2: rgb(253,187,44);
+
+// 规定字体系列
+*{
+	font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+// 撑起整个页面
+html,body{
+	min-height: 100%;
+	min-width:100%;
+}
+/* ========================导航条============================ */
+// 设置导航部分的背景色、border-bottom、padding-left
+// 以及内部文字的样式，缓动换出，悬停时背景颜色及大小变换
+.navigation{
+	background-color: $bg-dark-gray;
+	border-bottom: 2px solid $blue-black;
+	padding-left: 2%;
+	#menuTextLeft{
+		color: $white;
+		cursor: pointer;
+		font-size:16px;
+		font-weight: 200;
+		transition: 0.3s ease-in-out;
+		&:hover{
+			background-color: $blue2;
+			transform: scale(1.5);
+		}
+	}
+}
+
+/* ========================头部============================ */
+// 设置头部样式，padding、字居中、背景等
+.intro-header {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: $bg-dark-gray;
+}
+
+// 设置typing、blink-caret动画供下面使用
+@keyframes typing { 0% { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+// 设置同步内容部分的位置、padding、颜色、字体大小等
+.intro-message {
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    color: $white;
+    h1{
+    	font-size: 50px;
+    }
+	// 裁切图像为圆形，保留原始尺寸
+    #cys__photo{
+		width: 2*$imgSize;
+		-webkit-clip-path:circle($imgSize at $imgSize $imgSize);
+		object-fit: cover;
+		margin-bottom: 30px;
+    }
+	// 使用定义的typing动画，bink-caret实现打字效果
+    h3{
+		margin-left: 0px;
+		left:50%;
+    	font: bold 200% Consolas, Monaco, monospace;
+		border-right: .1em solid;
+		width: 34ch; /* # of chars */
+		margin: 1.2em 40% ;
+		white-space: nowrap;
+		overflow: hidden;
+		animation: typing 7s steps(34, end), /* # of steps = # of chars */
+	    blink-caret .5s step-end infinite alternate;
+	}
+}
+
+// 设置粒子动画位置，距离，宽高
+#particles-js{
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+/* ===================content-section-c================ */
+.content-section-c{
+	text-align: center;
+	padding-top: 5%;
+	margin-bottom: 1%;
+	background-color:$yellow;
+	canvas{
+		display: flex;
+		display: -webkit-flex;
+		align-items:center;
+		justify-content:center;
+		
+		display: inline-block;
+		margin-right: 10px;
+		margin-bottom: 20px;
+	}
+}
+
+
+/* ===================content-section-a================ */
+// 设置头部的文字、大小，padding、margin
+.content-section-a{
+	text-align: center;
+	// padding-top: 5%;
+	margin-bottom: 5%;
+	h1{
+		display: inline-block;
+		margin-right: 10px;
+		margin-bottom: 20px;
+	}
+	i{
+		font-size: 30px;
+	}
+	.lead{
+		margin-bottom: 4%;
+	}
+}
+
+//统一图片宽高 
+img.icon{
+	width:200px;
+	height: 200px;
+}
+
+// 文字部分属性以及悬停时大小变化
+.intro_p{
+	margin-top:10px;
+	font-size:18px;
+	color:$bg-dark-gray;
+	margin-top:10%;
+	text-shadow: 0 0 1px #eee;
+	transition: 0.2s;
+	&:hover{
+		transform: scale(1.5);
+	}
+}
+
+// 设置自我介绍skills、hobby、others等的样式
+.intro-row{
+	text-align: left;
+	background-color: $blue;
+	padding: 1.5em;
+	color:$text-white;
+	h3{
+		margin-left: 10%;
+		font-size: 22px;
+		font-weight: 100;
+		text-shadow: 0 0 1px #fff;
+		span{
+			margin-left:8%;
+			text-shadow:none;
+			white-space: pre;
+			font-size: 20px;
+		}
+	}
+}
+.skills-back{
+	background-color: $red;
+}
+.hobby{
+	background-color: $green;
+}
+.others{
+	background-color: $yellow;
+}
+
+/* ===================content-section-b================ */
+// 设置b部分的文字、padding、margin
+.content-section-b{
+	text-align: center;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	h1{
+		margin-right: 10px;
+		margin-bottom: 20px;
+	}
+}
+
+// 元素开头结尾赋空，以块状表格显示，清除浮动
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+	clear: both;
+}
+
+// 设置图片小盒子相关属性
+.boxes{
+    display: block;
+    width: 44%;
+    height: 320px;
+    background: #fe4;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 2%;
+    cursor: pointer;
+    box-shadow: 0 0 5px $white; 
+    .da-image{
+	   min-height: 100%;
+	   width: 100%;
+	}
+}
+// 设置图片小盒子文字的相关属性
+.overlay{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -100%;
+    color: #FFF;
+    background-color: $yellow;
+    z-index: 10;
+    text-align: center;
+    p{
+	    font-size:50px;
+	    font-weight: 300;
+	    padding-top: 80px;
+	}
+}
+// 设置图片小盒子内图片的相关属性
+.container-imgs{
+    width: 1170px;
+    display: block;
+    margin: 0;
+    padding-top: 1%;
+	padding-bottom: 3%;
+}
+
+
+// 设置shine动画，使按钮变大缩小来回闪烁
+@keyframes shine{
+	50%{transform: scale(1.1);}
+}
+.btn-success{
+	animation: 1s shine infinite;
+	i{
+		padding-right:5px;
+		font-size: 25px;
+	}
+}
+
+
+/* ===================content-section-d================ */
+// 设置d部分相关文字、padding、margin、颜色属性
+.content-section-d{
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 6%;
+	background-color: $yellow2;
+	color: #000;
+	h1{
+		margin-right: 10px;
+		margin-bottom: 20px;
+	}
+	.row{
+		padding-bottom: 3%;
+	}
+}
+
+// 图片悬停时有大小变化
+.md-img{
+	transition: 0.2s;
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+
+// 设置图片小盒子相关属性，以及内部图片、覆盖的文字的属性
+.boxes-md{
+    display: block;
+    width: 30%;
+    height: 240px;
+    background: #fe4;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 1.5%;
+    cursor: pointer;
+    box-shadow: 0 0 5px $white; 
+    .md-image{
+	   min-height: 100%;
+	   width: 100%;
+	}
+	.overlay-md{
+		display: block;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0%;
+	    left: -100%;
+	    color: #FFF;
+	    background-color: $blue;
+	    z-index: 10;
+	    text-align: center;
+	    p{
+		    font-size:20px;
+		    font-weight: 300;
+		    padding-top: 80px;
+		}
+	}
+}
+
+
+/* ===================content-section-e================ */
+// 设置e部分的文字居中、大小、padding、margin、颜色等
+.content-section-e{
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 6%;
+	background-color: $blue;
+	color:$text-white;
+	.row{
+		padding-bottom: 3%;
+	}
+	background-color: $red;
+	h1{
+		margin-bottom: 30px;
+	}
+	#lead-1{
+		margin-left: -88px;
+	}
+	i{
+		font-size: 30px;
+		margin-right:10px;
+	}
+}

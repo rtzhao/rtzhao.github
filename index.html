@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RtZhao——Resume Page</title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- 引入Font Awesome图标字体库和CSS框架 -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- 引入Bootstrap前端开发框架 -->
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- 链接首页的css样式 -->
+		<link rel='stylesheet' href='stylesheets/index.css' />
+		<script type="text/javascript" src="Javascripts/canvas.js"></script>
+	</head>
+	<body>
+		<!--Navigation -->
+		<header>
+			<nav class="navbar navbar-default navigation navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<p id="menuTextLeft" class="option1 navbar-text navbar-left">关于我</p>
+						</li>
+						<li>
+							<p id="menuTextLeft" class="option2 navbar-text navbar-left">项目展示</p>
+						</li>
+						<li>
+							<p id="menuTextLeft" class="option3 navbar-text navbar-left">技术文章</p>
+						</li>
+						<li>
+							<p id="menuTextLeft" class="option5 navbar-text navbar-left">联系我</p>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Header -->
+		<div class="intro-header">
+			<div class="container">
+				<div class="intro-message">
+					<img id='cys__photo' src='./imgs/profilephoto.png' />
+					<h1 class="animated bounceInDown">RtZhao</h1>
+					<h3>System.out.println("Hello,world");</h3>
+				</div>
+				<div id="particles-js"></div>
+			</div>
+		</div>
+		</div>
+		
+		<!-- /.content-section-c -->
+		<div id='time'>
+			<div class="content-section-c">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="time_container">
+							<canvas id="canvas"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- /.content-section-a -->
+		<div id='self-intro'>
+			<div class="content-section-a">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h1 class="section-heading">关于我</h1>
+							<a href='https://blog.csdn.net/RTyinying?spm=1011.2124.3001.5343' target="_blank"><i
+									class="fa fa-file-code-o" aria-hidden="true"></i></a>
+							<p class="lead"><strong>Not an ordinary back-end developer</strong></p>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<img class='icon' src='./imgs/icon_graduate.png' />
+								<p class='intro_p'>哈尔滨工业大学</p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<img class='icon' src='./imgs/icon_page.png' />
+								<p class='intro_p'>自学后端的野生开发</p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<img class='icon' src='./imgs/icon_com.png' />
+								<p class='intro_p'>实习3个月有余</p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<img class='icon' src='./imgs/icon_study.png' />
+								<p class='intro_p'>咱们可以面试详聊</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class='skills-front intro-row'>
+				<div class='container-fluid'>
+					<h3>前端技能 <span>HTML | CSS | Javascript | JQuery | Ajax | SASS | Bootstrap<span></h3>
+				</div>
+			</div>
+			<div class='skills-back intro-row'>
+				<div class='container-fluid'>
+					<h3>后端技能 <span>JavaSE | MySql | MyBatis | Spring | SpringMVC | Dubbo | Redis | SpringBoot</span></h3>
+				</div>
+			</div>
+			<div class='others intro-row'>
+				<div class='container-fluid'>
+					<h3>其他方面 <span>C | C++ | C# | Python | Linux | CET-6</span></h3>
+				</div>
+			</div>
+			<div class='hobby intro-row'>
+				<div class='container-fluid'>
+					<h3>兴趣爱好 <span>后端开发 | 番剧 | PC游戏 | 电影 | 数码</span></h3>
+				</div>
+			</div>
+		</div>
+
+		<!-- /.content-section-b -->
+		<div id='showskill'>
+			<div id="vector-art" class="content-section-b">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h1 class="section-heading">项目展示</h1>
+							<p class="lead">我坚持学习新技能，也喜欢研究怎样使开发更加便捷。</p>
+						</div>
+					</div>
+					<div class="container-imgs cf">
+						<div class="boxes">
+							<a target='_blank' href="https://github.com/rtzhao/BookGL">
+								<img class="da-image" src="imgs/NET.jpg" alt="..." />
+								<div class='overlay'>
+									<p>C# + .NET Framework ♥</p>
+								</div>
+							</a>
+						</div>
+						<div class="boxes">
+							<a target='_blank' href="https://gitee.com/rtzhao/crm-customer-management-system">
+								<img class="da-image" src="imgs/Spring.jpg" alt="...">
+								<div class='overlay'>
+									<p>Spring + SpringMVC + MyBatis ♥</p>
+								</div>
+							</a>
+						</div>
+						<div class="boxes">
+							<a target='_blank'
+								href="https://github.com/rtzhao/bookcycle">
+								<img class="da-image" src="imgs/wxapp.jpg" alt="...">
+								<div class='overlay'>
+									<p>wxml + wxss + jQuery + PHP ♥</p>
+								</div>
+							</a>
+						</div>
+						<div class="boxes">
+							<a target='_blank' href="https://github.com/rtzhao/SpringBoot_test">
+								<img class="da-image" src="imgs/SpringBoot.jpg" alt="...">
+								<div class='overlay'>
+									<p>SpringBoot + Thymeleaf + SSM + Redis + Dubbo ♥</p>
+								</div>
+							</a>
+						</div>
+
+					</div>
+					<a target='_blank' href="https://github.com/rtzhao"><button id="button"
+							class="btn btn-success btn-lg"> <i class="fa fa-github" aria-hidden="true"></i> See on
+							Github</button></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- /.content-section-d -->
+		<div id='articles'>
+			<div id="blogging" class="content-section-d">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-12">
+
+							<h1>技术文章</h1>
+							<p class="lead">我喜欢用写文章的方式记录学习，也希望帮到别人。</p>
+
+
+						</div>
+					</div>
+					<div class="container-imgs cf">
+						<div class="boxes boxes-md">
+							<a target='_blank' href="https://blog.csdn.net/RTyinying/article/details/111932218">
+								<img class="md-image" src="imgs/tree2.jpg" alt="..." />
+								<div class='overlay overlay-md'>
+									<p>数据结构与算法 ♥</p>
+								</div>
+							</a>
+						</div>
+						<div class="boxes boxes-md">
+							<a target='_blank' href="https://blog.csdn.net/RTyinying/article/details/110880036">
+								<img class="md-image" src="imgs/python.jpg" alt="...">
+								<div class='overlay overlay-md'>
+									<p>数字图像处理 ♥</p>
+								</div>
+							</a>
+						</div>
+						<div class="boxes boxes-md">
+							<a target='_blank' href="https://blog.csdn.net/RTyinying/article/details/110846569">
+								<img class="md-image" src="imgs/openGL.png" alt="...">
+								<div class='overlay overlay-md'>
+									<p>计算机图形学 ♥</p>
+								</div>
+							</a>
+						</div>
+
+					</div>
+					<a target='_blank' href="https://blog.csdn.net/RTyinying?spm=1011.2124.3001.5343"><button
+							id="button" class="animated infinite pulse btn btn-success btn-lg"> <i
+								class="icon fa fa-file-code-o" aria-hidden="true"></i> See on CSDN</button></a>
+				</div>
+
+
+			</div>
+		</div>
+
+		<!-- /.content-section-e -->
+		<div id='contactMe'>
+			<div class="content-section-e">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-12">
+
+							<h1 class="section-heading">联系我</h1>
+							<p class="lead" id='lead-1'>&emsp;&nbsp;<i class="fa fa-phone-square"></i> 135-8463-5668</p>
+							<p class="lead"> <i class='fa fa-envelope-open'></i> 1798491602@qq.com</p>
+
+
+						</div>
+					</div>
+
+					<a id="hire" href="mailto:1798491602@qq.com"><button id="button"
+							class="animated infinite pulse btn btn-success btn-lg"> <i class="icon fa fa-envelope-o"
+								aria-hidden="true"></i>contact</button></a>
+
+				</div>
+			</div>
+
+
+			<!-- 导入jQuery包 -->
+			<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+			<!-- 导入Particles.js 实现header粒子效果-->
+			<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+			<!-- 导入其他js文件 -->
+			<script type="text/javascript" src='javascripts/particle.js'></script>
+			<script type="text/javascript" src='javascripts/hover.js'></script>
+			<script type='text/javascript' src='javascripts/scroll.js'></script>
+
+		</div>
+	</body>
+</html>

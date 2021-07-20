@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/* line 15, ../sass/index.scss */
+* {
+  font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+
+/* line 19, ../sass/index.scss */
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* ========================导航条============================ */
+/* line 26, ../sass/index.scss */
+.navigation {
+  background-color: #31394d;
+  border-bottom: 2px solid #262d3c;
+  padding-left: 2%;
+}
+/* line 30, ../sass/index.scss */
+.navigation #menuTextLeft {
+  color: #ece7df;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 200;
+  transition: 0.3s ease-in-out;
+}
+/* line 36, ../sass/index.scss */
+.navigation #menuTextLeft:hover {
+  background-color: #45d9fd;
+  transform: scale(1.5);
+}
+
+/* ========================头部============================ */
+/* line 45, ../sass/index.scss */
+.intro-header {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #31394d;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/* line 57, ../sass/index.scss */
+.intro-message {
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  color: #ece7df;
+}
+/* line 62, ../sass/index.scss */
+.intro-message h1 {
+  font-size: 50px;
+}
+/* line 66, ../sass/index.scss */
+.intro-message #cys__photo {
+  width: 140px;
+  -webkit-clip-path: circle(70px at 70px 70px);
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+/* line 73, ../sass/index.scss */
+.intro-message h3 {
+  margin-left: 0px;
+  left: 50%;
+  font: bold 200% Consolas, Monaco, monospace;
+  border-right: .1em solid;
+  width: 34ch;
+  /* # of chars */
+  margin: 1.2em 40%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 7s steps(34, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+/* line 88, ../sass/index.scss */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* ===================content-section-c================ */
+/* line 97, ../sass/index.scss */
+.content-section-c {
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 1%;
+  background-color: #ffd124;
+}
+/* line 102, ../sass/index.scss */
+.content-section-c canvas {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+/* ===================content-section-a================ */
+/* line 117, ../sass/index.scss */
+.content-section-a {
+  text-align: center;
+  margin-bottom: 5%;
+}
+/* line 121, ../sass/index.scss */
+.content-section-a h1 {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+/* line 126, ../sass/index.scss */
+.content-section-a i {
+  font-size: 30px;
+}
+/* line 129, ../sass/index.scss */
+.content-section-a .lead {
+  margin-bottom: 4%;
+}
+
+/* line 135, ../sass/index.scss */
+img.icon {
+  width: 200px;
+  height: 200px;
+}
+
+/* line 141, ../sass/index.scss */
+.intro_p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #31394d;
+  margin-top: 10%;
+  text-shadow: 0 0 1px #eee;
+  transition: 0.2s;
+}
+/* line 148, ../sass/index.scss */
+.intro_p:hover {
+  transform: scale(1.5);
+}
+
+/* line 154, ../sass/index.scss */
+.intro-row {
+  text-align: left;
+  background-color: #1789ce;
+  padding: 1.5em;
+  color: #fafafa;
+}
+/* line 159, ../sass/index.scss */
+.intro-row h3 {
+  margin-left: 10%;
+  font-size: 22px;
+  font-weight: 100;
+  text-shadow: 0 0 1px #fff;
+}
+/* line 164, ../sass/index.scss */
+.intro-row h3 span {
+  margin-left: 8%;
+  text-shadow: none;
+  white-space: pre;
+  font-size: 20px;
+}
+
+/* line 172, ../sass/index.scss */
+.skills-back {
+  background-color: #fc4053;
+}
+
+/* line 175, ../sass/index.scss */
+.hobby {
+  background-color: #25e47a;
+}
+
+/* line 178, ../sass/index.scss */
+.others {
+  background-color: #ffd124;
+}
+
+/* ===================content-section-b================ */
+/* line 184, ../sass/index.scss */
+.content-section-b {
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+/* line 188, ../sass/index.scss */
+.content-section-b h1 {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 195, ../sass/index.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* line 203, ../sass/index.scss */
+.boxes {
+  display: block;
+  width: 44%;
+  height: 320px;
+  background: #fe4;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin: 2%;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ece7df;
+}
+/* line 214, ../sass/index.scss */
+.boxes .da-image {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* line 220, ../sass/index.scss */
+.overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: -100%;
+  color: #FFF;
+  background-color: #ffd124;
+  z-index: 10;
+  text-align: center;
+}
+/* line 231, ../sass/index.scss */
+.overlay p {
+  font-size: 50px;
+  font-weight: 300;
+  padding-top: 80px;
+}
+
+/* line 238, ../sass/index.scss */
+.container-imgs {
+  width: 1170px;
+  display: block;
+  margin: 0;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+@keyframes shine {
+  50% {
+    transform: scale(1.1);
+  }
+}
+/* line 251, ../sass/index.scss */
+.btn-success {
+  animation: 1s shine infinite;
+}
+/* line 253, ../sass/index.scss */
+.btn-success i {
+  padding-right: 5px;
+  font-size: 25px;
+}
+
+/* ===================content-section-d================ */
+/* line 262, ../sass/index.scss */
+.content-section-d {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  background-color: #fdbb2c;
+  color: #000;
+}
+/* line 268, ../sass/index.scss */
+.content-section-d h1 {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+/* line 272, ../sass/index.scss */
+.content-section-d .row {
+  padding-bottom: 3%;
+}
+
+/* line 278, ../sass/index.scss */
+.md-img {
+  transition: 0.2s;
+}
+/* line 280, ../sass/index.scss */
+.md-img:hover {
+  transform: scale(1.1);
+}
+
+/* line 286, ../sass/index.scss */
+.boxes-md {
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: #fe4;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin: 1.5%;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ece7df;
+}
+/* line 297, ../sass/index.scss */
+.boxes-md .md-image {
+  min-height: 100%;
+  width: 100%;
+}
+/* line 301, ../sass/index.scss */
+.boxes-md .overlay-md {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: -100%;
+  color: #FFF;
+  background-color: #1789ce;
+  z-index: 10;
+  text-align: center;
+}
+/* line 312, ../sass/index.scss */
+.boxes-md .overlay-md p {
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 80px;
+}
+
+/* ===================content-section-e================ */
+/* line 323, ../sass/index.scss */
+.content-section-e {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  background-color: #1789ce;
+  color: #fafafa;
+  background-color: #fc4053;
+}
+/* line 329, ../sass/index.scss */
+.content-section-e .row {
+  padding-bottom: 3%;
+}
+/* line 333, ../sass/index.scss */
+.content-section-e h1 {
+  margin-bottom: 30px;
+}
+/* line 336, ../sass/index.scss */
+.content-section-e #lead-1 {
+  margin-left: -88px;
+}
+/* line 339, ../sass/index.scss */
+.content-section-e i {
+  font-size: 30px;
+  margin-right: 10px;
+}
