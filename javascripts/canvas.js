@@ -310,4 +310,5 @@ window.onload=function() {
 		context.clearRect(0, 0, canvas.width, canvas.height);
 		drawDatetime(context);
 	}, 50)
+	
 }
